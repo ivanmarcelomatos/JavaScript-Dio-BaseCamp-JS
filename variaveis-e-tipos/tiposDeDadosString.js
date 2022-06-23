@@ -1,6 +1,10 @@
 
 
 // // String
+// videoaula relacionada DIO - Variáveis e Tipos - String
+// https://web.dio.me/course/variaveis-e-tipos/learning/b4937ea1-bb50-4e07-822d-e6810f5e65c9?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
+
+
 // let um = "um";
 // console.log(um);
 // console.log(typeof(um));
