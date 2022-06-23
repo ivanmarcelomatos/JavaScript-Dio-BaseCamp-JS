@@ -20,3 +20,10 @@ Output -> [1, 3, 0, 0, 0, 33, 23, 0]
 Input -> []
 
 Output -> -1
+
+
+
+# artigo relacionado na Alura - Hoisting no Javascript
+https://www.alura.com.br/artigos/hoisting-no-javascript?gclid=Cj0KCQjwntCVBhDdARIsAMEwAClnYWfNs6ZAS6TowbXUbbGfdRTCbWYWGSyCh1paVhKb_TzxDhTeIRIaAhVGEALw_wcB
+
+
