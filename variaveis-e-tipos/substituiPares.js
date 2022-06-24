@@ -1,3 +1,9 @@
+// // link videoaula relacionada na DIO - Variáveis e Tipos - Prática - Substituir números pares
+// https://web.dio.me/course/variaveis-e-tipos/learning/4cd0a19a-b615-4335-b988-e61777251db8?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
+
+
+
+
 function substituiNumerosPares(array) {
 	if (!array.length) return console.log(-1);
 
