@@ -2,6 +2,10 @@
 
 Projetos referentes ao curso "Funções" que ministrei pela [Digital Innovation One](https://digitalinnovation.one/).
 
+https://web.dio.me/course/funcoes/learning/183f95d6-d7cc-4ccb-84d7-f2ecc6f3aa01?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
+
+
+
 ## Atividade 1: Alunos Aprovados
 
 1. Crie uma função que recebe o array `alunos` e um número que irá representar a média final;
