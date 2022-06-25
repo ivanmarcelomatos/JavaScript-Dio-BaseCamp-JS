@@ -26,8 +26,11 @@ function alunosAprovados(alunos, media) {
 			aprovados.push(nome);
 		}
 	}
-
 	return aprovados;
 }
 
 console.log(alunosAprovados(alunos, 5));
+// [ 'João', 'Sofia', 'Paulo' ]
+
+console.log(alunosAprovados(alunos, 7));
+// [ 'Sofia ]

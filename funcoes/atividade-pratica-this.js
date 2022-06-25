@@ -20,4 +20,6 @@ const pessoa3 = {
 };
 
 console.log(calculaIdade.call(pessoa3, 40));
+//Daqui a 40 anos, Jonas terá 53 anos de idade.
 console.log(calculaIdade.apply(pessoa2, [24]));
+//Daqui a 24 anos, Márcia terá 44 anos de idade. {observe que com o método .apply o parâmetro é passado por meio de um array, necessitando por isso ser informado entre colchetes}
