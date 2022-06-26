@@ -25,4 +25,8 @@ function validaArrays(arr, num) {
 	}
 }
 
-console.log(validaArrays([1, 2, 3], 0));
+console.log(validaArrays([1, 2, 3], 0)); // RangeError: tamanho do array inválido
+
+// console.log(validaArrays([1, 2, 3, 4, 5, 6], 6)); // [1, 2, 3, 4, 5, 6]
+
+
