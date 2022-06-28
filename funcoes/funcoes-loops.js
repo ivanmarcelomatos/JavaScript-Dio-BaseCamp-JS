@@ -4,12 +4,26 @@
 
 
 
-// // If/Else
+// If/Else
+function numeroPositivo(num) {
+    let resultado;
+
+    if (num < 0) {
+        resultado = false;
+    } else {
+        resultado = true;
+    }
+    console.log(resultado);
+    return resultado
+}
+// numeroPositivo(2);// true
+
+// numeroPositivo(-9); // false
 // function numeroPositivo(num) {
 //     let resultado;
 
 //     if (num < 0) {
-//         resultado = false;
+//         resultado = fase;
 //     } else {
 //         resultado = true;
 //     }
@@ -17,9 +31,11 @@
 //     return resultado
 // }
 
-// numeroPositivo(2);// true
 
-// numeroPositivo(-9); // false
+
+
+
+
 
 
 
