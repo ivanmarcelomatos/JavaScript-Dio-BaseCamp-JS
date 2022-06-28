@@ -4,18 +4,48 @@
 
 
 
-// If/Else
-function numeroPositivo(num) {
-    let resultado;
+// // If/Else
+// function numeroPositivo(num) {
+//     let resultado;
 
-    if (num < 0) {
-        resultado = false;
-    } else {
-        resultado = true;
-    }
-    console.log(resultado);
-    return resultado
-}
+//     if (num < 0) {
+//         resultado = false;
+//     } else {
+//         resultado = true;
+//     }
+//     console.log(resultado);
+//     return resultado;
+// }
+
+// numeroPositivo(2);// true
+
+// numeroPositivo(-9); // false
+// function numeroPositivo(num) {
+//     let resultado;
+//     if(num < 0) {
+//         resultado = false;
+//     } else {
+//         resultado = true;
+//     }
+//     console.log(resultado);
+//     return resultado;
+// }
+
+// numeroPositivo(2); // true
+
+// numeroPositivo(-9); // false
+// function numeroPositivo(num) {
+//     let resultado;
+
+//     if (num < 0) {
+//         resultado = false;
+//     } else {
+//         resultado = true;
+//     }
+//     console.log(resultado);
+//     return resultado
+// }
+
 // numeroPositivo(2);// true
 
 // numeroPositivo(-9); // false
@@ -23,13 +53,14 @@ function numeroPositivo(num) {
 //     let resultado;
 
 //     if (num < 0) {
-//         resultado = fase;
+//         resultado = false;
 //     } else {
 //         resultado = true;
 //     }
 //     console.log(resultado);
 //     return resultado
 // }
+
 
 
 
@@ -60,6 +91,28 @@ function numeroPositivo(num) {
 
 // numeroPositivo(50); //true
 // numeroPositivo(-10); //false
+// function numeroPositivo(num) {
+//     let resultado;
+
+//     const ehNegativo = num < 0;
+
+//     if (ehNegativo) {
+//         resultado = false;
+//     } else {
+//         resultado = true;
+//     }
+//     console.log(resultado);
+//     return resultado;
+// }
+
+// numeroPositivo(50); // true;
+// numeroPositivo(-10); // false;
+
+
+
+
+
+
 
 
 
@@ -83,39 +136,74 @@ function numeroPositivo(num) {
 // numeroPositivo(-30); // false
 
 // numeroPositivo(80); // true
-
-
-
-
-
-
-
-
-
-// // If/else
-// // JavaScript não tem elseif. é preciso separar else if 
 // function numeroPositivo(num) {
 //     const ehNegativo = num < 0;
-//     const maiorQueDez = num > 10;
 
-//     if(ehNegativo) {
-//         console.log("Esse número é negativo!")
-//         return "Esse número é negativo!";
-//     } else if(!ehNegativo && maiorQueDez) {
-//         console.log("Esse número é positivo e maior que 10!");
-//         return "Esse número é positivo e maior que 10!"
+//     if (ehNegativo) {
+//         console.log(false);
+//         return false;
 //     }
-//     console.log("Esse número é positivo!");
-//     return "Esse número é positivo";
+//     console.log(true);
+//     return true;
 // }
 
-// numeroPositivo(2); // Esse número é positivo
+// numeroPositivo(-30); // false
 
-// numeroPositivo(-2); // Esse número é negativo
+// numeroPositivo(80); // true
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
 
-// numeroPositivo(40); // Esse número é positivo e maior que 10!
+//     if (ehNegativo) {
+//         console.log(false);
+//         return false;
+//     }
+//     console.log(true);
+//     return true;
+// }
 
-// numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é considerado um número neuro. nem é positivo nem é negativo}
+// numeroPositivo(-30); // false
+
+// numeroPositivo(80); // true
+
+
+
+
+
+
+
+
+
+
+
+
+// If/else
+// JavaScript não tem elseif. é preciso separar else if 
+function numeroPositivo(num) {
+    const ehNegativo = num < 0;
+    const maiorQueDez = num > 10;
+
+    if(ehNegativo) {
+        console.log("Esse número é negativo!")
+        return "Esse número é negativo!";
+    } else if(!ehNegativo && maiorQueDez) {
+        console.log("Esse número é positivo e maior que 10!");
+        return "Esse número é positivo e maior que 10!"
+    }
+    console.log("Esse número é positivo!");
+    return "Esse número é positivo";
+}
+
+numeroPositivo(2); // Esse número é positivo
+
+numeroPositivo(-2); // Esse número é negativo
+
+numeroPositivo(40); // Esse número é positivo e maior que 10!
+
+numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é considerado um número neuro. nem é positivo nem é negativo}
+
+
+
+
 
 
 
