@@ -4,16 +4,16 @@
 
 
 // // Valores Padrão {Pré-EC2015}
+
+//___________________________________________
 // function exponencial (array, num) {
 //     if (num === undefined) {
 //         num = 1;
 //     }
 //     const result = [];
-
 //     for (let i = 0; i < array.length; i++) {
 //         result.push(array[i] ** num);
 //     }
-
 //     return result;
 // }
 
@@ -22,6 +22,50 @@
 
 // console.log(exponencial([1,2,3,4], 4)); 
 // // 1, 16, 81, 256
+//_____________________________________________
+// function exponencial (array, num) {
+//     if (num===undefined) {
+//         num=1;
+//     }
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(array[i] ** num);
+//     }
+//     return result;
+// }
+
+// console.log(exponencial([1,2,3,4], 4));
+//_____________________________________________
+// function exponencial (array, num) {
+//     if (num===undefined) {
+//         num=1;
+//     }
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(array[i] ** num);
+//     }
+//     return result;
+// }
+
+// console.log(exponencial([2,3,4,5,6], 2));
+//_____________________________________________
+// function exponencial (array, num) {
+//     if (num===undefined) {
+//         num=1;
+//     }
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(array[i] ** num);
+//     }
+//     return result;
+// }
+
+// console.log(exponencial([ 5,4,3,5,6 ], 3));
+//_______________________________________________
+
+
+
+
 
 
 
@@ -45,6 +89,9 @@
 // console.log(exponencial([1,2,3,4])); // 1,2,3,4
 
 // console.log(exponencial([1,2,3,4], 4)); // 1, 16, 81, 256
+
+
+
 
 
 
@@ -97,6 +144,10 @@
 
 
 
+
+
+
+
 // Arrays e Objetos
 
 
@@ -111,6 +162,11 @@
 // const numbers = [1, 2, 3];
 
 // console.log(sum(...numbers)); // ... => spread
+
+
+
+
+
 
 
 
@@ -136,27 +192,31 @@
 
 
 
-// Técnica - Object Destructuring
 
-const user = {
-    id: 42,
-    displayName: "Jade",
-    fullName: {
-        firstName: "John",
-        lastName: "Doe"
-    }
-};
 
-function userId({id}) {
-    console.log(id);
-    return(id);
-}
 
-function getFullName({fullName: {firstName: first, lastName: last}}) {
-    console.log(`${first} ${last}`);
-    return `${first} ${last}`;
-}
 
-userId(user); //42
+// // Técnica - Object Destructuring
 
-getFullName(user); // John Doe
+// const user = {
+//     id: 42,
+//     displayName: "Jade",
+//     fullName: {
+//         firstName: "John",
+//         lastName: "Doe"
+//     }
+// };
+
+// function userId({id}) {
+//     console.log(id);
+//     return(id);
+// }
+
+// function getFullName({fullName: {firstName: first, lastName: last}}) {
+//     console.log(`${first} ${last}`);
+//     return `${first} ${last}`;
+// }
+
+// userId(user); //42
+
+// getFullName(user); // John Doe
