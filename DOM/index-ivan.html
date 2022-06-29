@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style-ivan.css">
+    <title>Minnha Página</title>
+</head>
+<body>
+    <h1 Id="titulo">Minha Página</h1>
+    <section class="textos">
+        <h2>Sobre Ela</h2>
+        <P>Texto sobre a pessoa aqui</P>
+    </section>
+    <section class="textos">
+        <h2>Meus Projetos</h2>
+        <ul>
+            <li>Projeto1</li>
+            <li>Projeto2</li>
+            <li>Projeto3</li>
+        </ul>
+    </section>
+    <div class="primeira-classe segunda-classe">
+        <ul>
+            <li class="opcao">opção 1</li>
+            <li class="opcao">opção 2</li>
+            <li class="opcao">opção 3</li>
+        </ul>
+    </div>
+    <div id="meu-elemento" class="classe">
+    </div>
+    <button id="meuBotao">clique aqui</button>
+    <h1 onclick="mudaTexto(this)">clique aqui</h1>
+    <script>
+        function mudaTexto(id) {
+            id.innerHTML ="Mudei!";
+        }
+    </script>
+    <!-- <script src="./assets/js/scripts-ivan.js"></script> -->
+</body>
+</html>

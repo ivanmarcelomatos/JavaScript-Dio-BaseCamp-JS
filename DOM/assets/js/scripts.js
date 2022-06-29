@@ -1,3 +1,7 @@
+// // Link Videoaula da Atividade Prática Relacionada na DIO - 
+// https://web.dio.me/course/manipulando-dom-com-javascript/learning/e84c6e17-6a14-4e5d-9916-87600aa4e9aa?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
+
+
 function changeMode() {
 	changeClasses();
 	changeText();
@@ -27,7 +31,11 @@ function changeText() {
 const darkModeClass = 'dark-mode';
 const button = document.getElementById('mode-selector');
 const h1 = document.getElementById('page-title');
-const body = document.getElementsByTagName('body')[0];
+const body = document.getElementsByTagName('body')[0]; //esse método ele retorna uma array
+
+// obs quando se usa o método getElementsByClassName ele também retorna um array
+
+
 const footer = document.getElementsByTagName('footer')[0];
 
 button.addEventListener('click', changeMode);
