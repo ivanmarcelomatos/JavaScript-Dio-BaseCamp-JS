@@ -5,6 +5,8 @@
 
 
 // // If/Else
+
+//_____________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 
@@ -20,6 +22,7 @@
 // numeroPositivo(2);// true
 
 // numeroPositivo(-9); // false
+//______________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 //     if(num < 0) {
@@ -34,6 +37,7 @@
 // numeroPositivo(2); // true
 
 // numeroPositivo(-9); // false
+//________________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 
@@ -49,6 +53,7 @@
 // numeroPositivo(2);// true
 
 // numeroPositivo(-9); // false
+//__________________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 
@@ -57,9 +62,19 @@
 //     } else {
 //         resultado = true;
 //     }
-//     console.log(resultado);
-//     return resultado
+//     return resultado;
 // }
+
+// console.log(numeroPositivo(2));
+
+// console.log(numeroPositivo(-9));
+//___________________________________________________
+
+
+
+
+
+
 
 
 
@@ -75,6 +90,8 @@
 
 
 // // If/Else {outra forma, armazenando a condicional dentro de uma constante}
+
+//_________________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 
@@ -91,6 +108,7 @@
 
 // numeroPositivo(50); //true
 // numeroPositivo(-10); //false
+//___________________________________________________
 // function numeroPositivo(num) {
 //     let resultado;
 
@@ -107,6 +125,28 @@
 
 // numeroPositivo(50); // true;
 // numeroPositivo(-10); // false;
+//____________________________________________________
+// function numeroPositivo(num) {
+//     let resultado;
+
+//     const ehNegativo = num < 0;
+
+//     if(ehNegativo) {
+//         resultado = false;
+//     } else {
+//         resultado = true;
+//     }
+//     return resultado;
+// }
+
+// console.log(numeroPositivo(50));
+
+// console.log(numeroPositivo(-10));
+//_____________________________________________________
+
+
+
+
 
 
 
@@ -122,6 +162,8 @@
 
 
 // // If/Else, Outra Forma, sem usar a variável resultado, reduzindo o uso da memória
+
+//_________________________________________________
 // function numeroPositivo(num) {
 //     const ehNegativo = num < 0;
 
@@ -136,6 +178,7 @@
 // numeroPositivo(-30); // false
 
 // numeroPositivo(80); // true
+//_________________________________________________
 // function numeroPositivo(num) {
 //     const ehNegativo = num < 0;
 
@@ -150,6 +193,7 @@
 // numeroPositivo(-30); // false
 
 // numeroPositivo(80); // true
+//_________________________________________________
 // function numeroPositivo(num) {
 //     const ehNegativo = num < 0;
 
@@ -164,6 +208,24 @@
 // numeroPositivo(-30); // false
 
 // numeroPositivo(80); // true
+//_________________________________________________
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
+
+//     if (ehNegativo) {
+//         return false;
+//     }
+//     return true;
+// }
+
+// console.log(numeroPositivo(-30));
+
+// console.log(numeroPositivo(80));
+//_______________________________________________
+
+
+
+
 
 
 
@@ -178,28 +240,67 @@
 
 // If/else
 // JavaScript não tem elseif. é preciso separar else if 
-function numeroPositivo(num) {
-    const ehNegativo = num < 0;
-    const maiorQueDez = num > 10;
 
-    if(ehNegativo) {
-        console.log("Esse número é negativo!")
-        return "Esse número é negativo!";
-    } else if(!ehNegativo && maiorQueDez) {
-        console.log("Esse número é positivo e maior que 10!");
-        return "Esse número é positivo e maior que 10!"
-    }
-    console.log("Esse número é positivo!");
-    return "Esse número é positivo";
-}
+//_____________________________________________________________
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
+//     const maiorQueDez = num > 10;
 
-numeroPositivo(2); // Esse número é positivo
+//     if(ehNegativo) {
+//         console.log("Esse número é negativo!")
+//         return "Esse número é negativo!";
+//     } else if(!ehNegativo && maiorQueDez) {
+//         console.log("Esse número é positivo e maior que 10!");
+//         return "Esse número é positivo e maior que 10!"
+//     }
+//     console.log("Esse número é positivo!");
+//     return "Esse número é positivo";
+// }
 
-numeroPositivo(-2); // Esse número é negativo
+// numeroPositivo(2); // Esse número é positivo
 
-numeroPositivo(40); // Esse número é positivo e maior que 10!
+// numeroPositivo(-2); // Esse número é negativo
 
-numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é considerado um número neuro. nem é positivo nem é negativo}
+// numeroPositivo(40); // Esse número é positivo e maior que 10!
+
+// numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é considerado um número neuro. nem é positivo nem é negativo}
+//_______________________________________________________________
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
+//     const maiorQueDez = num > 10;
+
+//     if (ehNegativo) {
+//         return `${'esse número é negativo'}`;
+//     } else if (!ehNegativo && maiorQueDez) {
+//         return "Esse número é positivo e maior que 10";
+//     }
+//     return "Esse número é positivo";
+// }
+
+// console.log(numeroPositivo(-30));
+
+// console.log(numeroPositivo(0));
+//_________________________________________________________________
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
+//     const maiorQueDez = num > 10;
+
+//     if (ehNegativo) {
+//         return `${'esse número é negativo'}`;
+//     } else if (!ehNegativo && maiorQueDez) {
+//         return `${'esse número é positivo e maior que dez'}`;
+//     }
+//     return `${'esse número é positivo'}`;
+// }
+
+// console.log(numeroPositivo(-30));
+// console.log(numeroPositivo(0));
+// console.log(numeroPositivo(40));
+//___________________________________________________________________
+
+
+
+
 
 
 
@@ -220,6 +321,7 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // //sempre precisa de um valor default
 // //ideal para se comparar muitos valores
 
+//______________________________________________________________
 // function getAnimal(id) {
 //     switch(id) {
 //         case 1:
@@ -242,6 +344,49 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // getAnimal(4); // default => peixe
 
 // getAnimal("1"); // default => peixe
+//________________________________________________________________
+// function getAnimal(id) {
+//     switch(id) {
+//         case 1:
+//             return "cão";
+//         case 2:
+//             return "gato";
+//         case 3:
+//             return "pássaro";
+//         case 4:
+//             return "peixe";
+//         default:
+//             return "apenas são válidos inteiros de 1 a 4";
+//     }
+// }
+
+// console.log(getAnimal(1));
+
+// console.log(getAnimal(4));
+
+// console.log(getAnimal(5));
+//______________________________________________________________
+// function getAnimal(id) {
+//     switch(id) {
+//         case 1:
+//             return "cão";
+//         case 2:
+//             return "gato";
+//         case 3:
+//             return "pássaro";
+//         case 4:
+//             return "peixe";
+//         default:
+//             return "apenas são válidos inteiros de 1 a 4";
+//     }
+// }
+
+// console.log(getAnimal(2));
+
+// console.log(getAnimal(4));
+
+// console.log(getAnimal(6));
+//_____________________________________________________________
 
 
 
@@ -252,8 +397,18 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 
 
-// // For
+
+
+
+
+
+
+
+
+// // For {exemplo com array}
 // // loop dentro de elementos iteráveis (arrays, strings)
+
+//__________________________________________________________
 // function multiplicaPorDois(arr) {
 //     let multiplicados = [];
 
@@ -268,6 +423,77 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // const meusNumeros = [2, 33, 456, 356, 40];
 
 // multiplicaPorDois(meusNumeros); // 4, 66, 912, 712, 80
+//___________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+// // For {exemplo com string}
+// // loop dentro de elementos iteráveis (arrays, strings)
+
+//____________________________________________________________
+// function stringParaArray(str) {
+//     let arrayDaPalavra = [];
+
+//     for (let i = 0; i < str.length; i++) {
+//         arrayDaPalavra.push(str[i]);
+//     }
+//     return arrayDaPalavra;
+// }
+
+// console.log(stringParaArray("doméstico"));
+
+// console.log(stringParaArray("animosidade"));
+//____________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // For {aproveitando pra mostrar novamente técnica rest}
+// // loop dentro de elementos iteráveis (arrays, strings)
+//__________________________________________________________
+// function multiplicaPorDois(...arr) { //usando técnica rest para juntar num array os valores recebidos em elementos separados
+//     let multiplicados = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         multiplicados.push(arr[i] * 2);
+//     }
+//     return multiplicados;
+// }
+
+// console.log(multiplicaPorDois(3,4,6));
+//___________________________________________________________
+
+
+
+
+
+
+
 
 
 
@@ -282,23 +508,39 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // for ... in
 // loop entre propriedades enumeráveis de um objeto
 
-
+//____________________________________________________________
 // function forInExemplo(obj) {
-//     for (prop in obj) { // o prop se refere a cada propriedade no objeto
-//         console.log(prop);
+//     for(aliasParaPropriedades in obj) {
+//         console.log(aliasParaPropriedades);
 //     }
 // }
 
 // const meuObjeto = {
 //     nome: "João",
 //     idade: 20,
-//     cidade: "Salvador"
+//     cidade: "Salvador",
 // }
 
+// console.log(meuObjeto);
+
 // forInExemplo(meuObjeto);
-// // nome
-// // idade
-// // cidade
+//____________________________________________________________
+// function forInExemplo(obj) {
+//     for(aliasParaPropriedades in obj) {
+//         console.log(aliasParaPropriedades);
+//     }
+// }
+
+// const meuObjeto = {
+//     nome: "João",
+//     idade: 20,
+//     cidade: "Salvador",
+// }
+
+// console.log(meuObjeto);
+
+// forInExemplo(meuObjeto);
+//_____________________________________________________________
 
 
 
@@ -306,6 +548,17 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 
 
+
+
+
+
+
+
+
+// for ... in {exemplo de outra forma com []}
+// loop entre propriedades enumeráveis de um objeto
+
+//______________________________________________________________
 // function forInExemplo(obj) {
 //     for (prop in obj) {
 //         console.log(obj[prop]);
@@ -322,35 +575,64 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // //João
 // //20
 // //Salvador
-
-
-
-
-
-
-
-
-
-
-
-// // for of
-// // loop entre estruturas iteráveis (arrays, strings)
-
-// function logLetras(palavra) {
-//     for (letra of palavra) {
-//         console.log(letra);
+//______________________________________________________________
+// function forInExemplo(obj) {
+//     for (propriedades in obj) {
+//         console.log(obj[propriedades]);
 //     }
 // }
 
-// const palavra = "abacaxi";
+// const meuObjeto = {
+//     nome: "João",
+//     idade: 20,
+//     cidade: "Salvador",
+// }
+
+// console.log(meuObjeto);
+
+// forInExemplo(meuObjeto);
+//______________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // for ... of 
+// // loop entre estruturas iteráveis (arrays, strings)
+
+
+// // for ... of {exemplo com string}
+//__________________________________________________
+// function logLetras(palavra) {
+//     for (aliasDoConstituinte of palavra) {
+//         console.log(aliasDoConstituinte);
+//     }
+// }
+
+// const palavra = "jacaré";
 // logLetras(palavra);
-// //a
-// //b
-// //a
-// //c
-// //a
-// //x
-// //i
+//__________________________________________________
+// function logLetras(palavra) {
+//     for (aliasDoConstituinte of palavra) {
+//         console.log(aliasDoConstituinte);
+//     }
+// }
+
+// const palavra = "Jacaré";
+// logLetras(palavra);
+//__________________________________________________
 
 
 
@@ -360,6 +642,29 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 
 
+
+
+
+
+
+
+// // for ... of {exemplo com array}
+//____________________________________________________
+{FAZER}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_______________________________________________________________
 // function logNumeros(nums) {
 //     for (num of nums) {
 //         console.log(num);
@@ -373,6 +678,7 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // //20
 // //233
 // //2
+//_______________________________________________________________
 
 
 
@@ -383,6 +689,10 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 
 
+
+
+
+//_______________________________________________________________
 // // While
 // // executa até que a condição se torne falsa
 
@@ -402,6 +712,7 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 // // 3
 // // 4
 // // 5
+//________________________________________________________________
 
 
 
@@ -411,6 +722,12 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 
 
+
+
+
+
+
+//________________________________________________________________
 // // Do While
 // // também executa até que a condição se torne falsa
 // // mas A PRIMEIRA EXECUÇÃO SEMPRE OCORRE
@@ -426,5 +743,6 @@ numeroPositivo(0); // {mostra zero como positivo, mas matematicamente o zero é 
 
 // exemploDoWhile();
 // // 6
+//_________________________________________________________________
 
 
