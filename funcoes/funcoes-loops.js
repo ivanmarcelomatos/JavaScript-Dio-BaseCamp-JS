@@ -615,23 +615,23 @@
 
 // // for ... of {exemplo com string}
 //__________________________________________________
-// function logLetras(palavra) {
+// function forOf(palavra) {
 //     for (aliasDoConstituinte of palavra) {
 //         console.log(aliasDoConstituinte);
 //     }
 // }
 
-// const palavra = "jacaré";
-// logLetras(palavra);
+// const palavra = "tucunaré";
+// forOf(palavra);
 //__________________________________________________
-// function logLetras(palavra) {
+// function forOf(palavra) {
 //     for (aliasDoConstituinte of palavra) {
 //         console.log(aliasDoConstituinte);
 //     }
 // }
 
-// const palavra = "Jacaré";
-// logLetras(palavra);
+// const palavra = "avião";
+// forOf(palavra);
 //__________________________________________________
 
 
@@ -650,41 +650,24 @@
 
 // // for ... of {exemplo com array}
 //____________________________________________________
-{FAZER}
-
-
-
-
-
-
-
-
-
-
-
-
-
-//_______________________________________________________________
-// function logNumeros(nums) {
-//     for (num of nums) {
-//         console.log(num);
+// function forOf(arr) {
+//     for (aliasDoConstituinte of arr) {
+//         console.log(aliasDoConstituinte);
 //     }
 // }
 
-// const nums = [30, 20, 233, 2];
+// const vetor=[3,4,6,7,[66,55,44],9];
+// forOf(vetor);
+//____________________________________________________
+// function forOf(arr) {
+//     for (aliasDoConstituinte of arr) {
+//         console.log(aliasDoConstituinte);
+//     }
+// }
 
-// logNumeros(nums);
-// //30
-// //20
-// //233
-// //2
-//_______________________________________________________________
-
-
-
-
-
-
+// const vetor = [3,6,7,[44,44,55],2,33322,2];
+// forOf(vetor);
+//___________________________________________________
 
 
 
@@ -692,10 +675,21 @@
 
 
 
-//_______________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
 // // While
 // // executa até que a condição se torne falsa
 
+//_______________________________________________________________
 // function exemploWhile() {
 //     let num = 0;
 
@@ -713,6 +707,25 @@
 // // 4
 // // 5
 //________________________________________________________________
+// function exemploWhile() {
+//     let num = 0;
+
+//     while(num<=5) {
+//         console.log(num);
+//         num++;
+//     }
+// }
+// exemploWhile();
+//_______________________________________________________________
+// (function exemploWhile() {
+//     let num = 0;
+
+//     while(num <= 5) {
+//         console.log(num);
+//         num++;
+//     }
+// })(); //declarei como função autoexecutável dessa vez só pra fixar
+//_______________________________________________________________
 
 
 
@@ -727,11 +740,16 @@
 
 
 
-//________________________________________________________________
+
+
+
+
+
 // // Do While
 // // também executa até que a condição se torne falsa
 // // mas A PRIMEIRA EXECUÇÃO SEMPRE OCORRE
 
+//________________________________________________________________
 // function exemploDoWhile() {
 //     let num = 6; // mesmo com o início fora da condição, é garantida uma execução
 
@@ -743,6 +761,17 @@
 
 // exemploDoWhile();
 // // 6
+//_________________________________________________________________
+// function exemploDoWhile() {
+//     let num = 6;
+
+//     do {
+//         console.log(num);
+//         num++;
+//     } while (num <= 5);
+// }
+
+// exemploDoWhile();
 //_________________________________________________________________
 
 
