@@ -7,9 +7,9 @@
 
 
 // Call
-// informa o objeto a quem a função deverá se referir
+// informa o objeto a quem a função deverá se referir {o objeto que a função deverá chamar}
 
-
+//________________________________________________________
 // const pessoa = {
 //     nome: "Miguel"
 // };
@@ -26,6 +26,64 @@
 // // Miguel
 // getSomething.call(animal);
 // // Murphy
+//_________________________________________________________
+// const pessoa = {
+//     nome: "Miguel",
+// };
+
+// const animal = {
+//     nome: "Murphy",
+// };
+
+// function getSomething() {
+//     console.log(this.nome);
+// };
+
+// getSomething.call(pessoa);
+
+// getSomething.call(animal);
+//________________________________________________________
+// const pessoa = {
+//     nome: "Miguel",
+// };
+
+// const animal = {
+//     nome: "Murphy",
+// };
+
+// function getSomething() {
+//     console.log(this.nome);
+// };
+
+// getSomething.call(pessoa);
+
+// getSomething.call(animal);
+//__________________________________________________________
+// const pessoa = {
+//     nome: "Miguel",
+// };
+
+// const animal = {
+//     nome: "Murphy",
+// }
+
+// function getSomething() {
+//     console.log(this.nome);
+// }
+
+// getSomething.call(pessoa);
+
+// getSomething.call(animal);
+//__________________________________________________________
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +92,8 @@
 
 
 // // call - é possível passar parâmetros para essa função separando-os por vírgulas
+
+//______________________________________________________________
 // const myObj = {
 //     num1: 2,
 //     num2: 4,
@@ -45,6 +105,70 @@
 
 // soma.call(myObj, 1, 5);
 // // 12 {ou seja: (myObj.num1=2  +  myObj.num2=4  + a=1  + b=5) = 12}
+//_______________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 1, 5);
+//______________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 1, 5);
+//______________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 1, 5);
+//_____________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 1, 5);
+//_____________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 1, 5);
+//_____________________________________________________________
+
+
+
+
+
+
+
+
 
 
 
@@ -58,6 +182,7 @@
 // // funcionamento muito parecido com call
 // // difere da call pois com o apply é possível passar os argumentos dentro de um array
 
+//______________________________________________________
 // const pessoa = {
 //     nome: "Miguel",
 // };
@@ -75,6 +200,49 @@
 
 // getSomething.apply(animal);
 // // Godi
+//________________________________________________________
+// const pessoa = {
+//     nome: "Miguel",
+// }
+
+// const animal = {
+//     nome: "Godi",
+// }
+
+// function getSomething() {
+//     console.log(this.nome);
+// }
+
+// getSomething.apply(pessoa);
+
+// getSomething.apply(animal);
+//_________________________________________________________
+// const pessoa = {
+//     nome: "Miguel",
+// }
+
+// const animal = {
+//     nome: "Godi",
+// }
+
+// function getSomething() {
+//     console.log(this.nome);
+// }
+
+// getSomething.apply(pessoa);
+
+// getSomething.apply(animal);
+//__________________________________________________________
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -84,6 +252,8 @@
 
 
 // // apply passando os dados dentro de um array
+
+//___________________________________________________
 // const myObj = {
 //     num1: 2,
 //     num2: 4,
@@ -95,6 +265,36 @@
 
 // soma.apply(myObj, [1,5]);
 // // 12 {ou seja: (myObj.num1=2 + myObj.num2=4 + valoresDoArray [1 + 5])=12 }
+//_____________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// };
+
+// soma.apply(myObj, [1, 5]);
+//_____________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
+
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b)
+// }
+
+// soma.apply(myObj, [1,5]);
+//____________________________________________________
+
+
+
+
+
+
+
 
 
 
@@ -108,15 +308,45 @@
 //bind {vincular, ligar, encadernar}
 // clona a estrutura da função onde é chamada e aplica o valor do objeto passado como parâmetro
 
-const retornaNomes = function() {
-    console.log(this.nome);
-    return this.nome;
-};
+//________________________________________________________
+// const retornaNomes = function() {
+//     console.log(this.nome);
+//     return this.nome;
+// };
 
-let bruno = retornaNomes.bind({nome: "Bruno"});
+// let bruno = retornaNomes.bind({nome: "Bruno"});
 
-bruno();
-// Bruno
+// bruno();
+// // Bruno
 
-retornaNomes();
-// undefined {porque aqui a função foi chamada mas sem receber o objeto}
+// retornaNomes();
+// // undefined {porque aqui a função foi chamada mas sem receber o objeto}
+//_________________________________________________________
+// const retornaNomes = function() {
+//     return this.nome;
+// }
+
+// let bruno = retornaNomes.bind({nome: "Bruno"});
+
+// console.log(bruno());
+
+// console.log(retornaNomes());
+//_________________________________________________________
+// const retornaNomes = function() {
+//     return this.nome;
+// }
+
+// let bruno = retornaNomes.bind({nome: "Bruno"});
+
+// console.log(bruno());
+//__________________________________________________________
+// const retornaValores = function() {
+//     return this.nome;
+// }
+
+// let bruno = retornaValores.bind({nome: "Bruno"});
+
+// console.log(bruno());
+
+// console.log(retornaValores());
+//___________________________________________________________
