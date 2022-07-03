@@ -75,8 +75,38 @@
 
 // getSomething.call(animal);
 //__________________________________________________________
+// const pessoa = {
+//     nome: 'Miguel',
+// };
 
+// const animal = {
+//     nome: 'Murphy',
+// };
 
+// function getSomething() {
+//     console.log(this.nome);
+// };
+
+// getSomething.call(pessoa);
+
+// getSomething.call(animal);
+//__________________________________________________________
+// const pessoa = {
+//     nome: 'Miguel',
+// }
+
+// const animal = {
+//     nome: 'Murphy',
+// }
+
+// function getSomething() {
+//     console.log(this.nome);
+// }
+
+// getSomething.call(pessoa);
+
+// getSomething.call(animal);
+//___________________________________________________________
 
 
 
@@ -161,7 +191,17 @@
 
 // soma.call(myObj, 1, 5);
 //_____________________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
 
+// function soma(a, b) {
+//     console.log(this.num1 + this.num2 + a + b);
+// }
+
+// soma.call(myObj, 5, 1);
+//___________________________________________________________
 
 
 
@@ -233,6 +273,22 @@
 
 // getSomething.apply(animal);
 //__________________________________________________________
+// const pessoa = {
+//     nome: 'Miguel',
+// }
+
+// const animal = {
+//     nome: 'Godi',
+// }
+
+// function getSomething() {
+//     console.log(this.nome);
+// }
+
+// getSomething.apply(pessoa);
+
+// getSomething.apply(animal);
+//________________________________________________________
 
 
 
@@ -288,7 +344,17 @@
 
 // soma.apply(myObj, [1,5]);
 //____________________________________________________
+// const myObj = {
+//     num1: 2,
+//     num2: 4,
+// }
 
+// function soma(a, b) {
+//     return this.num1 + this.num2 + a + b;
+// }
+
+// console.log(soma.apply(myObj, [4,6]));
+//___________________________________________________
 
 
 
@@ -350,3 +416,24 @@
 
 // console.log(retornaValores());
 //___________________________________________________________
+// const retornaValores = function() {
+//     return this.nome;
+// }
+
+// let bruno = retornaValores.bind({nome: 'Bruno'});
+
+// console.log(bruno());
+
+// console.log(retornaValores());
+//____________________________________________________________
+// const retornaValores = function() {
+//     return this.nome;
+// }
+
+// let bruno = retornaValores.bind({nome: 'Bruno'});
+
+// console.log(bruno());
+
+// console.log(retornaValores());
+//__________________________________________________________
+

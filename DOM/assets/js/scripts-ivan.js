@@ -73,15 +73,34 @@
 
 
 
+
+
+
+
+
+
 // // Trabalhando com Estilos
+// link videoaula relacionada na DIO - Trabalhando com Estilos
+// https://web.dio.me/course/manipulando-dom-com-javascript/learning/25149635-89e3-43da-be0f-681be1c58459?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
 
+
+
+
+//_________________________________________________
 // const meuElemento = document.getElementById("meu-elemento");
-
 // meuElemento.classList.add("novo-estilo");
-
 // meuElemento.classList.remove("classe");
-
 // meuElemento.classList.toggle("dark-mode"); // alternar
+//________________________________________________
+// const meuElemento = document.getElementById("meu-elemento");
+// meuElemento.classList;
+// meuElemento.classList.add("novo-estilo");
+// meuElemento.classList.remove("classe");
+// meuElemento.classList.toggle("dark-mode");
+//________________________________________________
+
+
+
 
 
 
@@ -97,15 +116,15 @@
 
 
 // // Acessando Diretamente o CSS de um elemento
+
+//_______________________________________________
 // document.getElementsByTagName("h1").titulo.style.color="green";
-// // document.getElementsByTagName("h1").titulo.style.color="blue";
-
-// document.getElementsByTagName("h1").titulo.style.border="red solid 2px";
-
-
-
-
-
+//_______________________________________________
+// document.getElementsByTagName("h1").titulo.style.color="green";
+//______________________________________________
+// document.getElementsByTagName("h1").titulo.style.color="blue";
+//______________________________________________
+document.getElementsByTagName("h1").titulo1.style.color="red";
 
 
 
@@ -117,6 +136,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+// Link Videoaula Relacionada na DIO - Eventos Tipos e Acionando Eventoshttps://web.dio.me/course/manipulando-dom-com-javascript/learning/2a57984c-d99d-4262-bccb-f706f1d56b24?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined
 
 
 // Eventos
