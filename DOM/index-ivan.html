@@ -1,5 +1,7 @@
 <!-- <!DOCTYPE html> -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<!DOCTYPE htmL>
+<!-- <html lang="en"> -->
 <!-- <html lang="en"> -->
 <html lang="en">
 <!-- <head>
@@ -9,6 +11,13 @@
     <link rel="stylesheet" href="./assets/css/style-ivan.css">
     <title>Minnha Página</title>
 </head> -->
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style-ivan.css">
+    <title>Minha Página</title>
+</head> -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +26,28 @@
     <title>Minha Página</title>
 </head>
 <!-- <body> -->
+<!-- <body> -->
 <body>
     <!-- <h1 Id="titulo">Minha Página</h1> -->
-    <h1 Id="titulo1">Minha Página</h1>
+    <!-- <h1 Id="titulo1">Minha Página</h1> -->
+    <h1 id="titulo1">Minha Página</h1>
     <!-- <section class="textos"> -->
-    <section class="textos">
+    <!-- <section class="textos"> -->
+    <!-- <section class="textos"> -->
+    <section id="secaoSobre" class="textos">
+        <!-- <h2>Sobre Ela</h2> -->
         <!-- <h2>Sobre Ela</h2> -->
         <h2>Sobre Ela</h2>
         <!-- <P>Texto sobre a pessoa aqui</P> -->
+        <!-- <p>Texto sobre a pessoa aqui</p> -->
         <p>Texto sobre a pessoa aqui</p>
+    <!-- </section> -->
     <!-- </section> -->
     </section>
     <!-- <section class="textos"> -->
+    <!-- <section class="textos"> -->
     <section class="textos">
+        <!-- <h2>Meus Projetos</h2> -->
         <!-- <h2>Meus Projetos</h2> -->
         <h2>Meus Projetos</h2>
         <!-- <ul>
@@ -37,7 +55,7 @@
             <li>Projeto2</li>
             <li>Projeto3</li>
         </ul> -->
-        <ul>
+        <ul id="listaDeProjetos"">
             <li>Projeto1</li>
             <li>Projeto2</li>
             <li>Projeto3</li>
@@ -52,12 +70,16 @@
         </ul>
     </div> -->
     <div class="primeira-classe segunda-classe">
-        <ul>
+        <ul id="listaDeOpcoes">
             <li class="opcao">opção 1</li>
             <li class="opcao">opção 2</li>
             <li class="opcao">Opção 3</li>
         </ul>
     </div>
+    <!-- <div id="meu-elemento" class="classe">
+        <button id="meuBotao">clique aqui</button>
+        <h1 onclick="mudaTexto(this)">clique aqui</h1>
+    </div> -->
     <!-- <div id="meu-elemento" class="classe">
         <button id="meuBotao">clique aqui</button>
         <h1 onclick="mudaTexto(this)">clique aqui</h1>
@@ -76,6 +98,11 @@
             id.innerHTML="Mudei!";
         }
     </script> -->
-    <script src="./assets/js/scripts-ivan.js"></script>
+    <script>
+        function mudaTexto(id) {
+            id.innerHTML="Mudei o texto!";
+        }
+    </script>
+    <!-- <script src="./assets/js/scripts-ivan.js"></script> -->
 </body>
 </html>

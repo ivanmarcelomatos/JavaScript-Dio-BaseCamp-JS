@@ -54,17 +54,71 @@
 // document.createElement("div"); // <div></div>
 
 
+
+// relacionado
+// https://www.w3schools.com/jsref/met_node_removechild.asp
+
 // document.removeChild(element); //remove um elemento HTML filho a partir de um elemento HTML pai
+// const listaDeProjetos = document.getElementsByTagName('ul')[0];
+// listaDeProjetos.removeChild(listaDeProjetos.firstElementChild);
 
 
-// document.appendChild(element); //adiciona um elemento
 
 
+// relacionado
+// https://www.w3schools.com/jsref/met_node_appendchild.asp
+
+// exemplo 01
+// const node = document.createElement("li");
+// const textnode = document.createTextNode("Water");
+// node.appendChild(textnode);
+// document.getElementById("myList").appendChild(node);
+
+
+// //exemplo 02
+// //Move an item from one list to another:
+// const node = document.getElementById("myList2").lastElementChild;
+// document.getElementById("myList1").appendChild(node); 
+
+
+// // exemplo 03
+// // Create a <p> element and append it to a <div> element:
+// const para = document.createElement("p");
+// const node = document.createTextNode("This is a paragraph.");
+// para.appendChild(node);
+// document.getElementById("myDIV").appendChild(para);
+
+
+
+
+
+// {terminar de fazer os exemplos do w3schools}
+// relacionados:
+// https://www.w3schools.com/jsref/met_node_replacechild.asp
+// JavaScript HTML DOM Node Lists
+// https://www.w3schools.com/js/js_htmldom_nodelist.asp
+// https://developer.mozilla.org/pt-BR/docs/Web/API/Node/replaceChild
 // document.replaceChild(new, old); //substitui um elemento
 
+// // exemplo01
+// // Replace a text node in an <li> element with a new text node:
+// const newNode = document.createTextNode("Projeto Substituto");
+// const element = document.getElementById("listaDeProjetos").children[0];
+
+// element.replaceChild(newNode, element.childNodes[0]);
 
 
 
+
+// exemplo02
+//Replace an <li> element with a new <li> element:
+//_____________________________________________________
+// const element = document.createElement("li");
+// const textNode = document.createTextNode("Water");
+// element.appendChild(textNode);
+// const list = document.getElementById("listaDeOpcoes");
+// list.replaceChild(element, list.childNodes[0]);
+//_____________________________________________________
 
 
 
@@ -124,6 +178,8 @@
 //______________________________________________
 // document.getElementsByTagName("h1").titulo.style.color="blue";
 //______________________________________________
+// document.getElementsByTagName("h1").titulo1.style.color="red";
+//______________________________________________
 document.getElementsByTagName("h1").titulo1.style.color="red";
 
 
@@ -168,17 +224,63 @@ document.getElementsByTagName("h1").titulo1.style.color="red";
 
 
 
+
+
+
+
+
 // Função Event Listener
 
+//_______________________________________________
+// function avisaClicou() {
+//     alert("clicou!");
+// }
+
+// const botao = document.getElementById("meuBotao");
+
+// //observe que a funcão eh chamada pelo EventListener e por isso não se coloca os parênteses
+// // //relacionado - addEventListener executa uma função antes mesmo de ser chamada
+// // https://pt.stackoverflow.com/questions/374278/addeventlistener-executa-uma-fun%C3%A7%C3%A3o-antes-mesmo-de-ser-chamada
+// botao.addEventListener("click", avisaClicou); 
+//_______________________________________________
+// function avisaClicou() {
+//     alert("clicou!");
+// }
+
+// const botao = document.getElementById("meuBotao");
+// botao.addEventListener("click", avisaClicou);
+//______________________________________________
+// function avisaClicou() {
+//     alert("clicou!");
+// }
+
+// const meuBotao = document.getElementById("meuBotao");
+// meuBotao.addEventListener("click", avisaClicou);
+//_______________________________________________
 function avisaClicou() {
     alert("clicou!");
 }
 
-const botao = document.getElementById("meuBotao");
+const meuBotao = document.getElementById("meuBotao");
+meuBotao.addEventListener("click", avisaClicou);
+//_______________________________________________
 
-//observe que a funcão eh chamada pelo EventListener e por isso não se coloca os parênteses
-// //relacionado - addEventListener executa uma função antes mesmo de ser chamada
-// https://pt.stackoverflow.com/questions/374278/addeventlistener-executa-uma-fun%C3%A7%C3%A3o-antes-mesmo-de-ser-chamada
-botao.addEventListener("click", avisaClicou); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Mudar diretamente no HTML demonstrado no arquivo index
+
+
 
 
